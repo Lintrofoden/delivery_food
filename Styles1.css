@@ -86,6 +86,7 @@ header #header-buttons #button-with-shopping-cart{
     display: flex;
     flex-direction: column;
     height: 100%;
+    width: 100%;
 }
 
 main{
@@ -96,18 +97,34 @@ main{
 
 .content{
     margin: 0px auto;
-    /* max-width: 80%; */
     width: 80%;
 }
 
 .banner-pizza{
-    /* background-color: orange; */
-    height: 200px;
+    margin: 40px 0;
+    background-color: #fff1b8;
+    height: 350px;
+    background-image: url(img/promo-img.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 385px 150px;
+    border-radius: 10px;
+    /* background-position: 230px 0; */
     /* background-image: url(img/card-image1.jpg); */
 }
+.banner-pizza__online-service{
+    position: absolute;
+    margin: 80px 70px;
+    width: 300px;
+    line-height: 2;
+}
 
-.search-of-restaurant{
-    /* background-color: orange; */
+.banner-pizza__dishies-from-rest{
+    position: absolute;
+    width: 700px;
+    margin: 200px 70px;
+    font-weight: 400;
+    font-size: 23px;
 }
 
 footer{
@@ -136,9 +153,9 @@ footer{
 }
 
 #footer-social-media{
-   order: 999;
    display: flex;
    gap: 30px;
    transform: scale(0.6);
+   order: 999;
    margin-left: auto;
 }
