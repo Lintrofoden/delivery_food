@@ -15,35 +15,18 @@ a{
 }
   
 header{
-    /* width: 100%; */
-    /* margin-left: 10%;
-    margin-right: 10%; */
     margin: 3% auto 0 auto;
-    /* margin-top: 3%; */
     text-align: center;
-    /* float: left; */
-    
-    /* background-color: orange; */
 }
 .header-content{
     width: 1210px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    /* margin: 0 auto; */
-}
-
-header #header-logo{
-    /* width: 15%; */
-    /* float: left; */
-    /* background-color: white; */
 }
 
 header #header-search{
-    /* width: 55%; */
-    /* float: left; */
     text-align: left;
-    /* background-color: red; */
 }
 
 header #header-search__input{
@@ -59,10 +42,7 @@ header #header-search__input{
 }
 
 header #header-buttons{
-    /* width: 30%; */
-    /* float: left; */
     text-align: right;
-    /* justify-content: space-around; */
 }
 
 header #header-buttons #button-to-come-in{
@@ -75,7 +55,7 @@ header #header-buttons #button-to-come-in{
     border-radius: 3px;
     font-weight: 500;
     font-size: medium;
-    /* вот это для расстояния между конпками */
+    /* вот это для расстояния между кнопками */
     margin-right: 10px
 }
 
@@ -104,7 +84,6 @@ main{
 
 .content{
     margin: 0px auto;
-    /* width: 80%; */
     width: 1210px;
 }
 
@@ -117,8 +96,6 @@ main{
     background-attachment: absolute;
     background-position: 250px 10px;
     border-radius: 10px;
-    /* background-position: 230px 0; */
-    /* background-image: url(img/card-image1.jpg); */
 }
 .banner-pizza__online-service{
     position: absolute;
@@ -163,37 +140,17 @@ h1{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 40px;
-    /* grid-gap: 10px; */
-    /* grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 30px;
-    grid-row-gap: 30px; */
+    margin-bottom: 30px;
 }
-.color1 {
-    background-color: #675ba7;
-}
-.color2 {
-    background-color: #9bc850;
-}
-.color3 {
-    background-color: #a62e5c;
-}
-.color4 {
-    background-color: #2a9fbc;
-}
-.color5 {
-    background-color: #4e342e;
-}
+
 .card{
     box-shadow: 0px 4px 12px rgb(0 0 0 / 5%);
     border-radius: 7px;
-    /* box-shadow: 0px 4px 12px rgb(0 0 0 / 5%);
-    border-radius: 10px; */
 }
 
 .card__image{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    /* width: 100%; */
 }
 
 .card__name-and-time{
@@ -217,7 +174,7 @@ h1{
 h6{
     background: #262626;
     color: #ffffff;
-    padding: 5px 10px 5px 10px;    /* height: 10px; */
+    padding: 5px 10px 5px 10px;
     margin-top: 5px;
     font-size: 12px;
     font-style: normal;
@@ -249,9 +206,9 @@ h3{
     font-weight: normal; */
     margin-left: 15px;
 }
-
+/* и как это вообще работает? Почему почтая строка == квадратику */
 .price::after{
-    content: "";
+    content: ""; /* я про это */
     width: 5px;
     height: 5px;
     background-color: #8c8c8c;
@@ -263,24 +220,13 @@ h3{
 
 footer{
     border-top: 0px solid grey;
-    /* width: 100%; */
-    /* margin-left: 10%;
-    margin-right: 10%;*/
-    /* margin-left: 10%; */
-    /* padding-top: 4%;
-    padding-bottom: 4%; */
-    margin: 4% auto 4% auto;
-    /* display: flex; */
-    /* justify-content: space-between; */
-    /* flex-wrap: wrap; */
-    /* max-width: 80%; */
+    margin: 4% auto;
+    padding-bottom: 50px;
 }
 
 .footer-content{
     width: 1210px;
     display: flex;
-    /* margin: 0 auto 0 auto; */
-    /* width: 80%; */
 }
 
 #footer-hrefs{
@@ -290,8 +236,6 @@ footer{
     display: flex;
     gap: 20px;
     font-size: large;
-    /* justify-content: space-between; */
-    /* padding: 0 20px; */
 }
 
 #footer-social-media{
