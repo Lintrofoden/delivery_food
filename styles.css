@@ -9,6 +9,7 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
+
 a{
     color: #595959;
     text-decoration: none;
@@ -91,25 +92,6 @@ main{
     margin: 0px auto;
     width: 1210px;
 }
-
-/* @media (max-width: 1600px){
-    .header-content{
-        width: 900px;
-        background: red;
-    }
-    .banner-pizza{
-        width: 900px;
-    }
-    .search-of-restaurant-block{
-        width: 900px;
-    }
-    .choice-of-dishes{
-        width: 900px;
-    } 
-    footer{
-        width: 900px;
-    }
-} */
 
 .banner-pizza{
     margin: 40px 0 60px 0;
@@ -231,7 +213,7 @@ h3{
     font-weight: normal; */
     margin-left: 15px;
 }
-/* и как это вообще работает? Почему почтая строка == квадратику */
+/* и как это вообще работает? Почему пустая строка равна квадратику */
 .price::after{
     content: ""; /* я про это */
     width: 5px;
@@ -271,4 +253,47 @@ footer{
    transform: scale(0.6);
    order: 999;
    margin-left: auto;
+   margin-right: 7px;
 }
+
+@media (max-width: 1365px) {
+    .header-content{
+        width: 1000px;
+    }
+     header #header-search__input{
+        width: 400px;
+    }
+    .content{
+        width: 1000px;
+    }
+    .footer-content{
+        width: 1000px;
+    }
+}
+
+
+/* @media (max-width: 2560){
+    .header-content{
+        width: 2000px;
+    }
+} */
+
+
+/* @media (max-width: 1600px){
+    .header-content{
+        width: 900px;
+        background: red;
+    }
+    .banner-pizza{
+        width: 900px;
+    }
+    .search-of-restaurant-block{
+        width: 900px;
+    }
+    .choice-of-dishes{
+        width: 900px;
+    } 
+    footer{
+        width: 900px;
+    }
+} */
