@@ -17,7 +17,9 @@ a{
 header{
     margin: 3% auto 0 auto;
     text-align: center;
+    /* width: 1210px; */
 }
+
 .header-content{
     width: 1210px;
     display: flex;
@@ -27,6 +29,7 @@ header{
 
 header #header-search{
     text-align: left;
+    /* margin-right: 89px; */
 }
 
 header #header-search__input{
@@ -38,6 +41,7 @@ header #header-search__input{
     background: url(img/home.svg) no-repeat 10px 50%;
     background-size: auto 50%;
     padding-left: 35px;
+    /* min-width: 650px; */
     width: 650px;
 }
 
@@ -86,6 +90,25 @@ main{
     margin: 0px auto;
     width: 1210px;
 }
+
+/* @media (max-width: 1600px){
+    .header-content{
+        width: 900px;
+        background: red;
+    }
+    .banner-pizza{
+        width: 900px;
+    }
+    .search-of-restaurant-block{
+        width: 900px;
+    }
+    .choice-of-dishes{
+        width: 900px;
+    } 
+    footer{
+        width: 900px;
+    }
+} */
 
 .banner-pizza{
     margin: 40px 0 60px 0;
@@ -140,7 +163,7 @@ h1{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-gap: 40px;
+    grid-gap: 30px;
 }
 
 .card{
@@ -219,9 +242,11 @@ h3{
 }
 
 footer{
-    margin: 4% auto;
-    padding-bottom: 50px;
+    margin: 0 auto;
+    padding: 50px 0;
     border-top: 0px solid grey;
+    width: 1210px;
+    flex: 0 0 auto;
 }
 
 .footer-content{
