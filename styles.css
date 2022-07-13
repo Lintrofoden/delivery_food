@@ -253,13 +253,15 @@ footer{
     transform: translate(0, 25%);
     margin: 0 30px;
     display: flex;
-    gap: 20px;
+    /* gap: 20px; */
+    gap: 1rem;
     font-size: large;
 }
 
 #footer-social-media{
    display: flex;
-   gap: 30px;
+   /* gap: 30px; */
+   gap: 1rem;
    transform: scale(0.6);
    order: 999;
    margin-left: auto;
@@ -448,8 +450,6 @@ footer{
 @media (max-width: 480px){
     .header-content{
         width: 350px;
-        display: flex;
-        flex-wrap: wrap;
     }
     header #header-search__input{
         width: 202px;
@@ -470,8 +470,6 @@ footer{
         line-height: 1.5;
     }
     .banner-pizza__dishies-from-rest{
-        display: flex;
-        flex-wrap: wrap;
         width: 300px;
         margin: 110px 20px;
         font-size: 16px;
@@ -516,13 +514,84 @@ footer{
         width: 280px;
         justify-content: center;
         transform: translate(5%, 5%);
+        gap: 0.5rem;
     }
     #footer-social-media{
         margin: 0 auto;
+        gap: 0.5rem;
     }
 }
 
 @media (max-width: 382px){
+    .header-content{
+        width: 270px;
+    }
+    header #header-search__input{
+        width: 120px;
+        margin-bottom: 10px;
+    }
+    header #header-buttons{
+        width: 270px;
+    }
+    .content{
+        width: 270px;
+        /* margin: 0 auto; */
+    }
+    .banner-pizza{
+        height: 180px;
+    }
+    .banner-pizza__online-service{
+        margin: 10px 12px;
+        line-height: 1.5;
+    }
+    .banner-pizza__dishies-from-rest{
+        width: 250px;
+        margin: 95px 12px;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    .search-of-restaurant-block{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        line-height: 2;
+    }
+    h1{
+        font-size: 20px;
+    }
+    .search-of-restaurant-block__input{
+        width: 195px;
+        order: 999;
+        margin-left: auto;
+    }
+    .card{
+        width: 270px;
+    }
+    .card__image{
+        width: 270px;
+    }
+    .card__name-and-time{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    h2{
+        font-size: 18px;
+    }
+    h3{
+        font-size: 12px;
+    }
+    .footer-content{
+        width: 270px;
+    }
+    #footer-hrefs{
+        width: 200px;
+        transform: translate(5%, 5%);
+    }
+    #footer-social-media{
+        /* margin: 0 auto; */
+        gap: 0.5rem;
+    }
 }
 
 
