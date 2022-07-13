@@ -39,7 +39,8 @@ header #header-search__input{
     font-weight: 500;
     font-size: medium;
     width: 100%;
-    border: 0.5px solid #d9d9d9;
+    border: 1px solid #d9d9d9;
+    border-radius: 2px;
     background: url(img/home.svg) no-repeat 10px 50%;
     background-size: auto 50%;
     padding-left: 35px;
@@ -74,17 +75,17 @@ header #header-buttons #button-with-shopping-cart{
     border-radius: 3px;
     color: #595959;
 }
-
+/* 
 .wrapper {
     display: flex;
     flex-direction: column;
     height: 100%;
     width: 100%;
-}
+} */
 
 main{
     width: 100%;
-    background: linear-gradient(white, #f6f6f6);
+     background: linear-gradient(white, #f6f6f6); /* #f6f6f6*/
     /* flex: 1 0 auto; */
 }
 
@@ -103,6 +104,7 @@ main{
     background-position: 250px 10px;
     border-radius: 10px;
 }
+
 .banner-pizza__online-service{
     position: absolute;
     margin: 80px 70px;
@@ -112,7 +114,7 @@ main{
 
 .banner-pizza__dishies-from-rest{
     position: absolute;
-    width: 700px;
+    width: 500px;
     margin: 200px 70px;
     font-weight: 400;
     font-size: 23px;
@@ -134,7 +136,8 @@ h1{
     font-weight: 500;
     font-size: medium;
     width: 100%;
-    border: 0.5px solid #d9d9d9;
+    border: 1px solid #d9d9d9;
+    border-radius: 2px;
     background: url(img/search.svg) no-repeat 10px 50%;
     background-size: auto 50%;
     padding-left: 35px;
@@ -143,21 +146,28 @@ h1{
 
 .choice-of-dishes{
     /* margin: 50px 0; */
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-gap: 30px;
+    grid-gap: 30px; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 .card{
     box-shadow: 0px 4px 12px rgb(0 0 0 / 5%);
     border-radius: 7px;
     margin-bottom: 40px;
+    width: 380px;
 }
 
 .card__image{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    width: 380px;
 }
 
 .card__name-and-time{
@@ -256,20 +266,268 @@ footer{
    margin-right: 7px;
 }
 
-@media (max-width: 1365px) {
+@media (max-width: 1366px) {
     .header-content{
         width: 1000px;
     }
-     header #header-search__input{
+    header #header-search__input{
         width: 400px;
     }
     .content{
         width: 1000px;
     }
+    .choice-of-dishes{
+        gap: 0px;
+    }
+    .card{
+        width: 310px;
+    }
+    .card__image{
+        width: 310px;
+    }
+    h3{
+        font-size: 16px;
+        font-style: normal;
+        font-weight: normal;
+    }
     .footer-content{
         width: 1000px;
     }
+    #footer-social-media{
+        margin-right: 10px;
+     }
 }
+
+@media (max-width: 992px){
+    .header-content{
+        width: 780px;
+    }
+    header #header-search__input{
+        width: 300px;
+    }
+    .content{
+        width: 780px;
+    }
+    .banner-pizza{
+        background-position: 440px -20px;
+        background-size: 600px;
+    }
+    .card{
+        width: 375px;
+    }
+    .card__image{
+        width: 375px;
+    }
+    h3{
+        font-size: 18px;
+        font-style: normal;
+        font-weight: normal;
+    }
+    .footer-content{
+        width: 780px;
+    }
+}
+
+@media (max-width: 768px){
+    html{
+        overflow-x: hidden;
+    }
+    .header-content{
+        width: 580px;
+        /* margin: 0 auto; */
+    }
+    header #header-search__input{
+        width: 170px;
+        /* margin: 0 auto; */
+    }
+    .content{
+        width: 580px;
+        /* margin: 0 auto; */
+    }
+    .banner-pizza{
+        background-position: 300px -200px;
+        background-size: 600px;
+    }
+    .card{
+        width: 280px;
+    }
+    .card__image{
+        width: 280px;
+    }
+    h3{
+        font-size: 12px;
+        font-style: normal;
+        font-weight: normal;
+    }
+    .footer-content{
+        margin: 0 auto;
+        width: 580px;
+        align-items: center;
+    }
+    #footer-hrefs{
+        width: 400px;
+        display: flex;
+        flex-wrap: wrap;
+        transform: translate(-5%, -5%);
+        gap: 10px;
+    }
+    #footer-social-media{
+        transform: scale(1);
+        margin-right: 0px;
+    }
+}
+
+@media (max-width: 578px){
+    .header-content{
+        width: 440px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    header #header-search__input{
+        width: 270px;
+        margin-bottom: 10px;
+    }
+    header #header-buttons{
+        width: 440px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .content{
+        width: 440px;
+        /* margin: 0 auto; */
+    }
+    .banner-pizza{
+        background-image: url();
+        /* background-position: 300px -200px;
+        background-size: 600px; */
+    }
+    .banner-pizza__online-service{
+        margin: 70px 40px;
+        line-height: 1.5;
+    }
+    .banner-pizza__dishies-from-rest{
+        display: flex;
+        flex-wrap: wrap;
+        width: 350px;
+        margin: 160px 40px;
+        font-size: 18px;
+        line-height: 2;
+    }
+    .search-of-restaurant-block{
+        align-items: center;
+    }
+    h1{
+        font-size: 20px;
+    }
+    .search-of-restaurant-block__input{
+        width: 230px;
+    }
+    .card{
+        width: 440px;
+    }
+    .card__image{
+        width: 440px;
+    }
+    h3{
+        font-size: 18px;
+    }
+    .footer-content{
+        width: 440px;
+    }
+    #footer-hrefs{
+        width: 440px;
+        gap: 5px;
+        font-size: 16px;
+    }
+    #footer-social-media{
+        transform: scale(1);
+        gap: 6px;
+    }
+}
+
+@media (max-width: 480px){
+    .header-content{
+        width: 350px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    header #header-search__input{
+        width: 202px;
+        margin-bottom: 10px;
+    }
+    header #header-buttons{
+        width: 350px;
+    }
+    .content{
+        width: 350px;
+        /* margin: 0 auto; */
+    }
+    .banner-pizza{
+        height: 200px;
+    }
+    .banner-pizza__online-service{
+        margin: 20px 20px;
+        line-height: 1.5;
+    }
+    .banner-pizza__dishies-from-rest{
+        display: flex;
+        flex-wrap: wrap;
+        width: 300px;
+        margin: 110px 20px;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    .search-of-restaurant-block{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        line-height: 2;
+    }
+    h1{
+        font-size: 20px;
+    }
+    .search-of-restaurant-block__input{
+        width: 250px;
+        order: 999;
+        margin-left: auto;
+    }
+    .card{
+        width: 350px;
+    }
+    .card__image{
+        width: 350px;
+    }
+    h3{
+        font-size: 18px;
+    }
+    .footer-content{
+        width: 350px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        /* flex-direction: column;
+        align-items: center;
+        text-align: center; */
+        text-align: center;
+        text-align: center;
+    }
+    #footer-hrefs{
+        display: flex;
+        width: 280px;
+        justify-content: center;
+        transform: translate(5%, 5%);
+    }
+    #footer-social-media{
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 382px){
+}
+
+
+/* flex-direction: column; */
+
 
 
 /* @media (max-width: 2560){
